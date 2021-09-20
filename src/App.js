@@ -1,9 +1,12 @@
+import Header from "./components/Header"
+
 
 function App() {
   return (
     <div className="App">
-      <h1>JOSN PLACEHOLDER</h1>
-      <button type="button" class="btn btn-primary btn-lg">Large button</button>
+      <Header />
+      <h1>Body</h1>
+      
     </div>
   );
 }
