@@ -21,15 +21,15 @@ class App extends Component {
       position: toast.POSITION.TOP_RIGHT,
       hideProgressBar: false,
       autoClose: 5000 
-  })
-}
+    })
+  }
 
 
 
   render() {
   return (
     <div className="App">
-      <Header />
+      <Header user={this.state.user}/>
       <ToastContainer/>
         <div class="row">
           <div class="col-sm-2">
@@ -40,7 +40,7 @@ class App extends Component {
           </div>
           <div class="col-sm-10">
             <div class="container">
-              <Home />
+              <Home user={this.state.user}/>
             </div>
           </div>
         </div>

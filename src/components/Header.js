@@ -1,7 +1,14 @@
-import React from "react"
+import React, { Component } from "react"
 
-const Header = (props) => {
-    return (
+
+class Header extends Component {
+
+    render() {
+
+        const user = this.props.user
+        console.log(user)
+
+        return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <a class="navbar-brand">JSON Placeholder</a>
@@ -11,13 +18,14 @@ const Header = (props) => {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link">#</a>
+                        <a class="nav-link">aksfjb</a>
                     </li>
                 </ul>
             </div>
             </div>
         </nav>
     )
+    }
 }
 
 export default Header
