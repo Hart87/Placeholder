@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from "./components/Header"
 import Home from "./components/Home"
+import Sidebar from "./components/Sidebar"
 import Spinner from "../src/util/Spinner"
 
 
@@ -37,10 +38,7 @@ class App extends Component {
       <ToastContainer/>
         <div class="row">
           <div class="col-sm-2">
-            <h1>Posts</h1>
-            <h1>Photos</h1>
-            <h1>Albums</h1>
-            <h1>Todos</h1>
+            <Sidebar />
           </div>
           <div class="col-sm-10">
             <div class="container">

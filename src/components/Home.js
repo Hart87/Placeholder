@@ -7,7 +7,12 @@ class Home extends Component {
         const user = this.props.user 
 
         return (
-             <h1 id="test">{user.name}</h1>
+            <div class ="container">
+                <h1 id="test">{user.name}</h1>
+            </div>
+             
+             
+             
         )
     }
 }
