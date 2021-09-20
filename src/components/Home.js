@@ -2,14 +2,12 @@ import React, { Component } from "react"
 
 class Home extends Component {
 
-
     render() {
 
-        const theUser = this.props.user
-        console.log(theUser)
+        const user = this.props.user 
 
         return (
-             <h1 id="test">HOME</h1>
+             <h1 id="test">{user.name}</h1>
         )
     }
 }

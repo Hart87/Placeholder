@@ -6,7 +6,6 @@ class Header extends Component {
     render() {
 
         const user = this.props.user
-        console.log(user)
 
         return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -18,7 +17,7 @@ class Header extends Component {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link">aksfjb</a>
+                        <a class="nav-link">{user.username }</a>
                     </li>
                 </ul>
             </div>

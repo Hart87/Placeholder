@@ -4,6 +4,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Header from "./components/Header"
 import Home from "./components/Home"
+import Spinner from "../src/util/Spinner"
 
 
 class App extends Component {
@@ -27,6 +28,9 @@ class App extends Component {
 
 
   render() {
+    if (!this.state.user) {
+      return <Spinner />
+    }
   return (
     <div className="App">
       <Header user={this.state.user}/>
