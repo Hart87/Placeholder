@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import axios from "axios"
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Header from "./components/Header"
 import Home from "./components/Home"
 
@@ -12,12 +14,23 @@ class App extends Component {
     let result = await axios.get("https://jsonplaceholder.typicode.com/users/3")
     console.log(result)
     this.setState({ user: result.data });
+    //toast for UI
+    toast.success( "logged in as: " + this.state.user.name, {
+      closeOnClick: true,
+      draggable: true,
+      position: toast.POSITION.TOP_RIGHT,
+      hideProgressBar: false,
+      autoClose: 5000 
+  })
 }
+
+
 
   render() {
   return (
     <div className="App">
       <Header />
+      <ToastContainer/>
         <div class="row">
           <div class="col-sm-2">
             <h1>Posts</h1>
