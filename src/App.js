@@ -14,7 +14,7 @@ class App extends Component {
 
   async componentDidMount() {
     let result = await axios.get("https://jsonplaceholder.typicode.com/users/3")
-    console.log(result)
+    await new Promise(x => setTimeout(x, 2000))
     this.setState({ user: result.data });
     //toast for UI
     toast.success( "logged in as: " + this.state.user.name, {
@@ -36,16 +36,9 @@ class App extends Component {
     <div className="App">
       <Header user={this.state.user}/>
       <ToastContainer/>
-        <div class="row">
-          <div class="col-sm-2">
-            <Sidebar />
-          </div>
-          <div class="col-sm-10">
-            <div class="container">
+          <div class="container">
               <Home user={this.state.user}/>
-            </div>
           </div>
-        </div>
     </div>
   );
   }

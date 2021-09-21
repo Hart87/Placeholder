@@ -17,7 +17,20 @@ class Header extends Component {
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link">{user.username }</a>
+                        <a class="nav-link active">{user.username}</a>
+                    </li>
+                     
+                    <li class="nav-item">
+                        <a class="nav-link">Albums</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Posts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Todos</a>
                     </li>
                 </ul>
             </div>
