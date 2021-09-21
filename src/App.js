@@ -7,7 +7,6 @@ import Footer from "./components/Footer"
 import Home from "./components/Home"
 import Spinner from "../src/util/Spinner"
 import Albums from "./components/pages/Albums";
-import Photos from "./components/pages/Photos";
 import Posts from "./components/pages/Posts";
 import Todos from "./components/pages/Todos"
 import { BrowserRouter as Router,
@@ -51,9 +50,6 @@ class App extends Component {
           </Switch>
           <Switch>
             <Route exact path="/pages/albums" render={() => <Albums user={this.state.user}/>} />
-          </Switch>
-          <Switch>
-            <Route exact path="/pages/photos" render={() => <Photos user={this.state.user}/>} />
           </Switch>
           <Switch>
             <Route exact path="/pages/posts" render={() => <Posts user={this.state.user}/>} />

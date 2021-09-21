@@ -52,7 +52,7 @@ class Posts extends Component {
             {this.state.posts.length > 0 ? ( 
             <div>
                 {this.state.posts.map((post)=> (
-                    <ol class="list-group list-group-numbered">
+                    <ol class="list-group">
                         <a onClick={this.clickMe.bind(this, post)}>
                         <li class="list-group-item d-flex justify-content-between align-items-start">
                             <div class="ms-2 me-auto">
