@@ -24,9 +24,6 @@ class Header extends Component {
                         <Link to="/pages/albums" class="nav-link">Albums</Link>
                     </li>
                     <li class="nav-item">
-                        <Link to="/pages/photos" class="nav-link">Photos</Link>
-                    </li>
-                    <li class="nav-item">
                         <Link to="/pages/posts" class="nav-link">Posts</Link>
                     </li>
                     <li class="nav-item">
