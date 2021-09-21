@@ -2,9 +2,15 @@ import React, { Component } from "react"
 
 class Home extends Component {
 
+    
+
     render() {
 
         const user = this.props.user 
+
+        function ButtonLogic() {
+            window.alert("Does Something")
+        }
 
         return (
             <div class ="container">
@@ -15,10 +21,13 @@ class Home extends Component {
                         <p class="lead text-muted">This is a demo ReactJS project for use with the JSONPlaceholder API. You are staticly logged in as user #3.</p>
                         <h5>{user.company.name + ": " + user.company.bs}</h5>
                         <p>
-                        <a href="#" class="btn btn-primary my-2">Main call to action</a>
+                        <br></br>
+                        <button type="button" className="btn btn-primary" onClick={ButtonLogic}>Main call to action</button>
+                        <br></br>
                         </p>
                     </div>
                 </div>
+                
             </div>
              
              
