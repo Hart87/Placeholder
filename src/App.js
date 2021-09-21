@@ -6,6 +6,15 @@ import Header from "./components/Header"
 import Footer from "./components/Footer"
 import Home from "./components/Home"
 import Spinner from "../src/util/Spinner"
+import Albums from "./components/pages/Albums";
+import Photos from "./components/pages/Photos";
+import Posts from "./components/pages/Posts";
+import Todos from "./components/pages/Todos"
+import { BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect,
+ } from "react-router-dom";
 
 
 class App extends Component {
@@ -34,11 +43,26 @@ class App extends Component {
     }
   return (
     <div className="App">
-      <Header user={this.state.user}/>
-      <ToastContainer/>
-          <div class="container">
-              <Home user={this.state.user}/>
-          </div>
+      <Router>
+        <Header user={this.state.user}/>
+          <ToastContainer/>
+          <Switch>
+            <Route exact path="/" render={() => <Home user={this.state.user}/>} />
+          </Switch>
+          <Switch>
+            <Route exact path="/pages/albums" render={() => <Albums user={this.state.user}/>} />
+          </Switch>
+          <Switch>
+            <Route exact path="/pages/photos" render={() => <Photos user={this.state.user}/>} />
+          </Switch>
+          <Switch>
+            <Route exact path="/pages/posts" render={() => <Posts user={this.state.user}/>} />
+          </Switch>
+          <Switch>
+            <Route exact path="/pages/todos" render={() => <Todos user={this.state.user}/>} />
+          </Switch>
+
+      </Router>
       <Footer user={this.state.user}/>
     </div>
   );

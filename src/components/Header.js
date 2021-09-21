@@ -1,4 +1,5 @@
 import React, { Component } from "react"
+import { Link } from "react-router-dom"
 
 
 class Header extends Component {
@@ -10,7 +11,7 @@ class Header extends Component {
         return (
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand">JSON Placeholder</a>
+                <Link to="/" class="navbar-brand">JSONPlaceholder</Link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -20,16 +21,16 @@ class Header extends Component {
                         <a class="nav-link active">{"User #" + user.id}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Albums</a>
+                        <Link to="/pages/albums" class="nav-link">Albums</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Photos</a>
+                        <Link to="/pages/photos" class="nav-link">Photos</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Posts</a>
+                        <Link to="/pages/posts" class="nav-link">Posts</Link>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Todos</a>
+                        <Link to="/pages/todos" class="nav-link">Todos</Link>
                     </li>
                 </ul>
             </div>
