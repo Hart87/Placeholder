@@ -4,6 +4,7 @@
 
 ![Package.json version](https://img.shields.io/github/package-json/v/hart87/placeholder?style=for-the-badge)
 ![API](https://img.shields.io/badge/API-jsonplaceholder.typicode.com-informational?style=for-the-badge)
+![Docker Build](https://img.shields.io/badge/docker%20build-Passing-brightgreen?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/hart87/placeholder?style=for-the-badge)
 ![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/hart87/placeholder?style=for-the-badge)
 ![GitHub last commit](https://img.shields.io/github/last-commit/hart87/placeholder?style=for-the-badge)
