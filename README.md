@@ -1,6 +1,6 @@
 # Placeholder
 
-![placeholder](./react.png)
+![placeholder](./home.png)
 
 ![Package.json version](https://img.shields.io/github/package-json/v/hart87/placeholder?style=for-the-badge)
 ![API](https://img.shields.io/badge/API-jsonplaceholder.typicode.com.com-informational?style=for-the-badge)
@@ -16,6 +16,7 @@
 Placeholder is a small but functional application that drives home ReactJS concepts to put together User Interfaces to pair up with back end projects.
 
 * Its criteria are : 
+    * Fully responsive UI. From mobile to desktop
     * Component tree based architecture
     * Resuable components
     * Props
@@ -25,12 +26,16 @@ Placeholder is a small but functional application that drives home ReactJS conce
 ## Architecture
 ![placeholder](./tree.png)
 
-An Asynchronous GET request is initiated in App.JS to obtain user information for User #3 located at ``https://jsonplaceholder.typicode.com/users/3`` . That JSON is parsed and set in the applications State. That state is used as a prop and passed down to every component in the tree (except Spinner - which is used for UX). 
+An Asynchronous GET request is initiated in App.JS to obtain user information for User #3 located at ``https://jsonplaceholder.typicode.com/users/3`` . That JSON is parsed and set in the applications State. That information saved in State is used as a Prop and passed down to every component in the tree (except Spinner - which is used for UX). 
+
+![placeholder](./posts.png)
+
+This a screegrab of the Posts page for user #3. CLicking on any row in the list will generate a toast message displaying the title of the row clicked to display basic functionality.
 
 ## Installation
 Clone the repository ``cd`` into the directory and then ``npm start``. Should run on localhost:3000
 
-If you don't have node installed, a Docker image is available on dockerhub: jhart87/jsonplaceholder:latest
+If you don't have node installed, a Docker image is available on dockerhub: ``jhart87/jsonplaceholder:latest``
 
 
 ## Release History
